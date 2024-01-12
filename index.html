@@ -4,27 +4,50 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Forms</title>
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <h1>Demographics Survey</h1>
-    <form action="">
-      <input
-        type="text"
-        placeholder="Enter your name"
-        minlength="10"
-        maxlength="50"
-      />
-      <p>What is your gender</p>
-      <input type="radio" id="Male" name="gender" value="Male" /> Male
-      <br /><input type="radio" id="Female" name="gender" value="Female" />
-      Female
-      <label for="gender"></label>
-      <p>Select all that apply to you</p>
-      <input type="checkbox" /> Kenyan <br />
-      <input type="checkbox" /> Foreigner <br />
-      <input type="checkbox" />Teenager <br />
-      <input type="checkbox" /> Adult <br />
-      <input type="submit" />
-    </form>
+    <div class="container">
+      <h1>Demographics Survey</h1>
+      <form action="#">
+        <div class="name"><label for="name">Name</label> <br /></div>
+
+        <div class="placeholder">
+          <input
+            type="text"
+            placeholder="Enter your name"
+            minlength="10"
+            maxlength="50"
+            id="name"
+          />
+        </div>
+        <br />
+        <div class="gender">
+          <label for="gender">What is your gender</label>
+          <br />
+          <input type="radio" id="gender" name="gender" value="Male" /> Male
+          <br /><input type="radio" id="gender" name="gender" value="Female" />
+          Female
+        </div>
+        <br />
+        <div class="nationalitynagegroup">
+          <label for="nationalityandageroup">Tick where applicable</label>
+          <br />
+
+          <input
+            type="checkbox"
+            id="nationalityandageroup"
+            name="nationalityandageroup"
+          />Kenyan<br />
+
+          <input type="checkbox" id="nationalityandageroup" />Foreigner<br />
+          <input type="checkbox" id="nationalityandageroup" />Teenager<br />
+          <input type="checkbox" id="nationalityandageroup" />Adult
+        </div>
+        <br />
+
+        <input type="submit" />
+      </form>
+    </div>
   </body>
 </html>

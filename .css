@@ -1,0 +1,13 @@
+* {
+  padding: 10px;
+}
+.container {
+  border-radius: 20%;
+  border-width: 100vw;
+}
+.name {
+  padding-bottom: 15px;
+}
+.gender {
+  padding-bottom: 15px;
+}
